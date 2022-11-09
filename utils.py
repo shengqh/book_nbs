@@ -36,7 +36,7 @@ def search_images_bing(key, term, min_sz=128):
 # -
 
 def plot_function(f, tx=None, ty=None, title=None, min=-2, max=2, figsize=(6,4)):
-    x = torch.linspace(min,max)
+    x = torch.linspace(min,max, steps=100)
     fig,ax = plt.subplots(figsize=figsize)
     ax.plot(x,f(x))
     if tx is not None: ax.set_xlabel(tx)
